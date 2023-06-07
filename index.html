@@ -7,61 +7,70 @@
     <link rel="stylesheet" href="./style.css" />
     <title>クラスとインスタンス</title>
   </head>
+
   <body>
-    <div class="accordion" id="js-faq">
-      <p class="accordion-trigger">Q1.JavaScriptとは何ですか？</p>
-      <div class="accordion-contents">
-        A1.JavaScriptは、ウェブページに対してインタラクティブな要素を追加するために使用されるプログラミング言語です。主にクライアントサイドで動作し、ウェブブラウザ上で実行されます。
+    <section class="accordion">
+      <div class="accordion-items" id="js-faq">
+        <p class="accordion-trigger">Q1.JavaScriptとは何ですか？</p>
+        <div class="accordion-contents">
+          A1.JavaScriptは、ウェブページに対してインタラクティブな要素を追加するために使用されるプログラミング言語です。主にクライアントサイドで動作し、ウェブブラウザ上で実行されます。
+        </div>
+        <p class="accordion-trigger">
+          Q2.JavaScriptで変数を宣言する方法を教えてください。
+        </p>
+        <div class="accordion-contents">
+          A2.はい、JavaScriptではvar、let、constの3つのキーワードを使用して変数を宣言します。varは古い方法であり、ブロックスコープを持ちません。letとconstはES6で導入され、ブロックスコープを持ちます。letは再代入可能な変数を宣言するために使用され、constは再代入不可能な定数を宣言するために使用されます。
+        </div>
       </div>
-      <p class="accordion-trigger">
-        Q2.JavaScriptで変数を宣言する方法はありますか？
-      </p>
-      <div class="accordion-contents">
-        A2.はい、JavaScriptではvar、let、constの3つのキーワードを使用して変数を宣言します。varは古い方法であり、ブロックスコープを持ちません。letとconstはES6で導入され、ブロックスコープを持ちます。letは再代入可能な変数を宣言するために使用され、constは再代入不可能な定数を宣言するために使用されます。
+    </section>
+
+    <section class="accordion">
+      <div class="accordion-items" id="js-accordion">
+        <a href="" class="accordion-trigger"
+          >Q3. JavaScriptで配列を作成する方法を教えてください。</a
+        >
+        <div class="accordion-contents">
+          A3. はい、JavaScriptでは[]を使用して配列を作成します。<br />
+          以下は例です。<br />
+          let myArray = [1, 2, 3, 4, 5];
+        </div>
+        <a href="" class="accordion-trigger">
+          Q4. JavaScriptで関数を定義する方法を教えてください。
+        </a>
+        <div class="accordion-contents">
+          A4.
+          はい、JavaScriptではfunctionキーワードを使用して関数を定義します。以下は例です。<br />
+          function myFunction() { <br />
+          &emsp;// 関数の処理 <br />
+          } <br />
+          また、ES6以降ではアロー関数と呼ばれる新しい関数の定義方法も導入されました。以下はアロー関数の例です。
+          <br />
+          const myFunction = () => { <br />
+          &emsp;// 関数の処理 <br />
+          }
+        </div>
       </div>
-    </div>
+    </section>
 
-    <br /><br />
-
-    <div class="accordion" id="js-accordion">
-      <a href="" class="accordion-trigger"
-        >Q3. JavaScriptで配列を作成する方法はありますか？</a
-      >
-      <div class="accordion-contents">
-        A3. はい、JavaScriptでは[]を使用して配列を作成します。以下は例です。 let
-        myArray = [1, 2, 3, 4, 5];
-      </div>
-      <a href="" class="accordion-trigger">
-        Q4. JavaScriptで関数を定義する方法はありますか？
-      </a>
-      <div class="accordion-contents">
-        A4:
-        はい、JavaScriptではfunctionキーワードを使用して関数を定義します。以下は例です。
-        function myFunction() { // 関数の処理 }
-        また、ES6以降ではアロー関数と呼ばれる新しい関数の定義方法も導入されました。以下はアロー関数の例です。
-        const myFunction = () => { // 関数の処理 }
-      </div>
-    </div>
-
-    <br /><br />
-
-    <dl class="accordion" id="js-accordion-mini">
-      <dt class="accordion-trigger">
-        Q5: JavaScriptで条件分岐を行う方法はありますか？
-      </dt>
-      <dd class="accordion-contents">
-        A5: はい、JavaScriptではif、else
-        if、elseを使用して条件分岐を行います。以下は例です。<br />
-        let number = 10;<br />
-        if (number > 0) {<br />
-          console.log("正の数です"); <br />
-        } else if (number < 0) {<br />
-          console.log("負の数です"); <br />
-        } else { <br />
-          console.log("ゼロです"); <br />
-        }
-      </dd>
-    </dl>
+    <section class="accordion">
+      <dl class="accordion-items" id="js-accordion-mini">
+        <dt class="accordion-trigger">
+          Q5. JavaScriptで条件分岐を行う方法を教えてください。
+        </dt>
+        <dd class="accordion-contents">
+          A5. はい、JavaScriptではif、else
+          if、elseを使用して条件分岐を行います。以下は例です。<br />
+          let number = 10;<br />
+          if (number > 0) {<br />
+          &emsp;console.log("正の数です"); <br />
+          } else if (number < 0) {<br />
+          &emsp;console.log("負の数です"); <br />
+          } else { <br />
+          &emsp;console.log("ゼロです"); <br />
+          }
+        </dd>
+      </dl>
+    </section>
 
     <script src="./accordion.js"></script>
   </body>
